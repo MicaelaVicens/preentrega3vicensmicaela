@@ -1,0 +1,19 @@
+
+@import "variables";
+@import "nav";
+@import "footer";
+@import "main";
+
+
+// mapas
+$redes: (
+    instagram:  #102615 ,
+    facebook: #102615, 
+
+); 
+
+@each $red, $color in $redes {
+    .social-# {$red} {
+        color: $color;
+    }
+}
