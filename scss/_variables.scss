@@ -1,55 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html{
-    height: 100%;
-  }
- 
-  body{
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100%;
-  }
+$font-family_1: 'Montserrat', sans-serif;
 
-  .header{
-    grid-area: header;
-  }
-  
-  .navbar{
-    background-color: #0a180d;
-    grid-area: navbar;
-  }
-  
-  .main{
-    grid-area: main;
-  }
-  
-  .footer{
-    grid-area: footer;
-  }
-  
-  .grid-contenedor{
-    display: grid;
-    grid-template:
-        "header"  10px
-        "navbar"  50px
-        "main"    auto
-        "footer"  300px;
-  }
-  
-  @media (min-width: 600px){
-    .grid-contenedor{
-        grid-template-rows: 10px 40px auto 150px;
-    }
-  }
-  
-  @media (min-width: 900px){
-    .grid-contenedor{
-        grid-template-rows: 10px 60px auto 150px;
-    }
-  }
+$color_1: #51b080;
+$color_2: #1b5a44;
+$color_3: #10221c;
+$color_4: #308259;
+$color_6: #40955d;
+$color_7: #228244;
+$color_8: #21c674;
+$color_9: #3e9d77;
+$color_10: #39b175;
+$color_11: #3d8f63;
+$color_12: #98dba5;
+$color_13: #c5e7cd;
+$color_14: #1a7549;
+
+$background-color_0: #0a180d;
+$background-color_1: #0d1b10;
+$background-color_2: #193d21;
+$background-color_3: #0a130c;
+$background-color_4: #141d19;
+$background-color_5: #1e8c66;
+$background-color_6: #209f4c;
+$background-color_7: #256e3f;
+$background-color_8: #0a130c;
+$background-color_9: #10221c;
+$background-color_10: #0d1b10;
+$background-color_11: #2e734b;
+$background-color_12: #baeebc;
+$background-color_13: #1a7549;
+$background-color_14: #10221c;
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	font-family: $font-family_1;
+	min-height: 100%;
+}
+.header {
+	grid-area: header;
+}
+.navbar {
+	background-color: $background-color_0;
+	grid-area: navbar;
+}
+.main {
+	grid-area: main;
+}
+.footer {
+	grid-area: footer;
+}
+.grid-contenedor {
+	display: grid;
+	grid-template: "header" 10px "navbar" 50px "main" auto "footer" 300px;
+}
+@media (min-width: 600px) {
+	.grid-contenedor {
+		grid-template-rows: 10px 40px auto 150px;
+	}
+}
+@media (min-width: 900px) {
+	.grid-contenedor {
+		grid-template-rows: 10px 60px auto 150px;
+	}
+}
 
 
   

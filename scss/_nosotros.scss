@@ -1,0 +1,17 @@
+$color_11: #3d8f63;
+$background-color_10: #0d1b10;
+
+.container {
+	background-color: $background-color_10;
+	h1 {
+		font-size: 35px;
+		padding-top: 40px;
+		color: $color_11;
+		text-align: center;
+	}
+}
+.nosotros {
+	background-color: $background-color_10;
+	color: $color_11;
+	text-align: justify;
+}

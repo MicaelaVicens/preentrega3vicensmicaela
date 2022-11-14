@@ -1,28 +1,35 @@
-.container-fluid img{
-    width: 60px;
-    height: auto;
-  }
-  
-  header nav div div ul .nav-link {
-    color: #40955d !important;
-    font-weight: bold;
-  }
-  
-  header nav div div ul .nav-link:hover {
-    color:#228244 !important;
-    text-shadow: 1px 1px 1px #a0dec3;
-  }
-  
-  .navbar-toggler{
-    background-color: #209f4c;
-  }
-  
-  .dropdown-menu{
-    background-color: #256e3f;
-  }
-  
-  .dropdown-item{
-    color: #21c674;
-    font-weight: bold ;
-  }
-  
+.container-fluid {
+	img {
+		width: 60px;
+		height: auto;
+   
+	}
+}
+header {
+	nav {
+		div {
+			div {
+				ul {
+					.nav-link {
+						color: $color_6 !important;
+						font-weight: bold;
+						&:hover {
+							color: $color_7 !important;
+							text-shadow: 1px 1px 1px #a0dec3;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.navbar-toggler {
+	background-color: $background-color_6;
+}
+.dropdown-menu {
+	background-color: $background-color_7;
+}
+.dropdown-item {
+	color: $color_8;
+	font-weight: bold;
+}

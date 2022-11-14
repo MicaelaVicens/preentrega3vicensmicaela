@@ -1,0 +1,33 @@
+$color_14: #1a7549;
+$background-color_14: #10221c;
+
+.main-sucursales {
+	background-color: $background-color_14;
+	background-size: cover;
+}
+.direcciones1 {
+	font-size: 20px;
+	color: $color_14;
+	text-align: left;
+	margin: 10px;
+	padding: 10px;
+	width: 55%;
+	text-decoration: none;
+}
+.sucursales1 {
+	font-size: 30px;
+	margin-left: 15px;
+	color: $color_14;
+	padding: 10px;
+	text-decoration-line: underline;
+}
+.sucursales2 {
+	font-size: 15px;
+	margin-left: 15px;
+	color: $color_14;
+}
+.iframe1 {
+	margin-left: 20px;
+	border-radius: 15px;
+	padding: 10px;
+}

@@ -25,7 +25,10 @@ body {
 
 .grid-contenedor {
   display: grid;
-  grid-template: "header"  10px "navbar"  50px "main"    auto "footer"  300px; }
+  grid-template: "header"  10px
+ "navbar"  50px
+ "main"    auto
+ "footer"  300px; }
 
 @media (min-width: 600px) {
   .grid-contenedor {
@@ -57,7 +60,6 @@ header nav div div ul .nav-link:hover {
   color: #21c674;
   font-weight: bold; }
 
-/* INICIO FOOTER*/
 .footer {
   width: 100%;
   bottom: 0;
@@ -99,7 +101,6 @@ header nav div div ul .nav-link:hover {
   font-size: 14px;
   font-weight: lighter; }
 
-/* MAIN INICIO */
 .intro {
   background-color: #0d1b10;
   height: 600px;
@@ -189,7 +190,6 @@ header nav div div ul .nav-link:hover {
   height: 250px;
   width: auto; }
 
-/* MAIN NOSOTROS*/
 .container {
   background-color: #0d1b10; }
 
@@ -204,7 +204,6 @@ header nav div div ul .nav-link:hover {
   color: #3d8f63;
   text-align: center; }
 
-/* MAIN PRODUCTOS*/
 .section-productos {
   background-color: #2e734b;
   padding: 10px; }
@@ -251,7 +250,6 @@ header nav div div ul .nav-link:hover {
   border-radius: 40px;
   border: #4a8561 solid 2px; }
 
-/* MAIN CONTACTO */
 .main-contacto {
   background-color: #10221c;
   background-size: cover; }
@@ -267,7 +265,7 @@ header nav div div ul .nav-link:hover {
   font-size: 20px;
   margin-left: 15px;
   color: #39b175;
-  padding: 8px; }
+  padding:10px; }
 
 .contacto3 {
   font: size 25px;
@@ -286,7 +284,6 @@ header nav div div ul .nav-link:hover {
   margin-left: 150px;
   padding: 10px; }
 
-/* MAIN SUCURSALES*/
 .main-sucursales {
   background-color: #10221c;
   background-size: cover; }

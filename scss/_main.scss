@@ -1,272 +1,115 @@
+/* MAIN INDEX */
+
+$color_1: #51b080;
+$color_2: #1b5a44;
+$color_3: #10221c;
+$color_4: #308259;
+$background-color_1: #0d1b10;
+$background-color_2: #193d21;
+$background-color_3: #0a130c;
+$background-color_4: #141d19;
+$background-color_5: #1e8c66;
+
+.intro {
+	background-color: $background-color_1;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $color_1;
+	h1 {
+		font-weight: bold;
+		font-size: 50px;
+	}
+	h2 {
+		font-weight: bold;
+		font-size: 40px;
+	}
+}
+.sale-container {
+	background-color: $background-color_2 ;
+	h2 {
+		color: $color_4;
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+.grid-sale {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+	padding: 10px 5px;
+	justify-content: space-around;
+	>div {
+		background-color: $background-color_3;
+		color: $color_1;
+		height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 10px;
+	}
+	img {
+		height: 250px;
+		width: 200px;
+		border-radius: 10px;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.4s;
+		}
+	}
+	a {
+		font-weight: bold;
+		font-size: 16px;
+		color: $color_2;
+		background-color: $background-color_4;
+		text-decoration: none;
+		padding: 8px;
+		border-radius: 40px;
+		border: #427454 solid 2px;
+		&:hover {
+			transition: 0.7s;
+			color: $color_3;
+			background-color: $background-color_5;
+		}
+	}
+}
+.sale {
+	img {
+		height: 250px;
+		width: auto;
+	}
+}
+@media screen and (max-width:550px) {
+	.intro {
+		h1 {
+			font-size: 35px;
+		}
+		h2 {
+			font-size: 28px;
+		}
+	}
+	.sale-container {
+		h2 {
+			font-size: 35px;
+		}
+	}
+}
 
 
-/* MAIN INICIO */
-
-.intro{
-    background-color: #0d1b10 ;
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #51b080;
-  }
-  
-  
-  .intro h1{
-    font-weight: bold;
-    font-size: 50px;
-  }
-  
-  @media screen and (max-width:550px){
-    .intro h1{
-        font-size: 35px;
-    }
-  }
-  
-  .intro h2{
-    font-weight: bold;
-    font-size: 40px;
-  }
-  
-  @media screen and (max-width:550px){
-    .intro h2{
-        font-size: 28px;
-    }
-  }
-  
-  .sale-container{
-    background-color: #193d21!important;
-  }
-  
-  .grid-sale{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-    padding: 10px 5px;
-    justify-content: space-around;
-  }
-  
-  .grid-sale > div{
-    background-color:  #0a130c;
-    color: #51b080;;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .grid-sale img{
-    height: 250px;
-    width: 200px;
-    border-radius: 10px;
-  }
-  
-  .grid-sale img:hover{
-    transform: scale(1.1);
-    transition: 0.4s;
-  }
-  
-  .grid-sale a{
-    font-weight: bold;
-    font-size: 16px;
-    color: #1b5a44;
-    background-color: #141d19;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 40px;
-    border: #427454 solid 2px
-  }
-  
-  .grid-sale a:hover{
-    transition: 0.7s;
-    color: #10221c;
-    background-color: #1e8c66;
-  
-  }
-  
-  .sale-container h2{
-    color: #308259;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  @media screen and (max-width:550px){
-    .sale-container h2{
-        font-size: 35px;
-    }
-  }
-  
-  .sale img{
-    height: 250px;
-    width: auto;
-  }
-
-
-/* MAIN NOSOTROS*/
-
-.container{
-    background-color: #0d1b10;
-  }
-  
-  .nosotros{
-    background-color: #0d1b10;
-    color: #3d8f63; 
-    text-align: justify;
-  }
-  
-  
-  .container h1{
-    font-size: 35px;
-    padding-top: 40px;
-    color: #3d8f63; 
-    text-align: center;
-  
-  }
-  
-  /* MAIN PRODUCTOS*/
-  
-  .section-productos{
-    background-color: #2e734b;
-    padding: 10px;
-  }
-  
-  .section-productos h1{
-    font-size: 35px;
-    padding-top: 40px;
-    color: #98dba5;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .grid-container{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-  
-  .grid-container > div{
-    background-color: #baeebc;
-    height: 450px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .grid-container img{
-    width: 260px;
-    height: 260px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .grid-container img:hover{
-    transform: scale(1.1);
-    transition: 0.6s;
-  }
-  
-  .grid-container a{
-    font-weight: bold;
-    font-size: 16px;
-    color: #c5e7cd;
-    background-color: #1a7549;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 40px;
-    border: #4a8561 solid 2px
-  }
   
   
   
-  /* MAIN CONTACTO */
-   
-  .main-contacto{
-    background-color: #10221c;
-    background-size:cover;
-  }
   
-  .contacto1{
-    font-size:30px;
-    margin-left: 15px;
-    color:  #39b175;
-    padding: 10px ;
-    text-decoration-line: underline;
-  }
+ 
   
-  .contacto2{
-    font-size:20px;
-    margin-left: 15px;
-    color:  #39b175;
-    padding: 8px;
-  }
-  
-  .contacto3{
-    font: size 25px;
-    margin-left: 15px;
-    color:  #39b175;
-    padding: 10px;
-    
-  }
-  
-  .contacto4{
-    font: size 20px;
-    margin-left: 15px;
-    color:   #39b175;
-    padding: 10px;
-  
-  }
-  
-  .contacto5{
-    font: size 20px;
-    margin-left: 150px;
-    padding: 10px;
-  
-  }
-  
-  /* MAIN SUCURSALES*/
-  
-  .main-sucursales{
-    background-color:#10221c;
-    background-size:cover;
-  }
-  .direcciones1{
-    font-size: 20px;
-    color:#1a7549;
-    text-align: left;
-    margin: 10px;
-    padding: 10px ;
-    width: 55%;
-    text-decoration: none;
-  }
-  
-  .sucursales1{
-    font-size:30px;
-    margin-left: 15px;
-    color:  #1a7549;
-    padding: 10px ;
-    text-decoration-line: underline;    
-  }
-  
-  .sucursales2{
-    font-size:15px;
-    margin-left: 15px;
-    color: #1a7549;
-  }
-  
-  .iframe1{
-   margin-left: 20px;
-   border-radius: 15px;
-   padding: 10px;
-  }
+ 

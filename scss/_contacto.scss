@@ -1,0 +1,30 @@
+
+
+.main-contacto {
+	background-color: $background-color_9;
+	background-size: cover;
+}
+.contacto1 {
+	font-size: 30px;
+	margin-left: 15px;
+	color: $color_10;
+	padding: 10px;
+	text-decoration-line: underline;
+}
+.contacto2 {
+	@include contac;
+}
+.contacto3 {
+	font: size 25px;
+	margin-left: 15px;
+	color: $color_10;
+	padding: 10px;
+}
+.contacto4 {
+	@include contac;
+}
+.contacto5 {
+	font: size 20px;
+	margin-left: 150px;
+	padding: 10px;
+}

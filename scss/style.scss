@@ -3,17 +3,11 @@
 @import "nav";
 @import "footer";
 @import "main";
+@import "contacto";
+@import "sucursales";
+@import "productos";
+@import "nosotros";
 
 
-// mapas
-$redes: (
-    instagram:  #102615 ,
-    facebook: #102615, 
 
-); 
 
-@each $red, $color in $redes {
-    .social-# {$red} {
-        color: $color;
-    }
-}
