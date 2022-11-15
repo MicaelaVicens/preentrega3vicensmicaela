@@ -5,9 +5,10 @@
 header nav div div ul .nav-link {
   color: #40955d !important;
   font-weight: bold; }
-  header nav div div ul .nav-link:hover {
-    color: #228244 !important;
-    text-shadow: 1px 1px 1px #a0dec3; }
+
+header nav div div ul .nav-link:hover {
+  color: #228244 !important;
+  text-shadow: 1px 1px 1px #a0dec3; }
 
 .navbar-toggler {
   background-color: #209f4c; }
@@ -23,7 +24,7 @@ header nav div div ul .nav-link {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #0a130c;
+  background-color: #0b150d;
   color: #3e9d77;
   text-align: center;
   display: flex;
@@ -250,3 +251,40 @@ header nav div div ul .nav-link {
   background-color: #0d1b10;
   color: #3d8f63;
   text-align: justify; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100%; }
+
+.header {
+  grid-area: header; }
+
+.navbar {
+  background-color: #0a180d;
+  grid-area: navbar; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+.grid-contenedor {
+  display: grid;
+  grid-template: "header"  10px "navbar"  50px "main"    auto "footer"  300px; }
+
+@media (min-width: 600px) {
+  .grid-contenedor {
+    grid-template-rows: 10px 40px auto 150px; } }
+
+@media (min-width: 900px) {
+  .grid-contenedor {
+    grid-template-rows: 10px 60px auto 150px; } }

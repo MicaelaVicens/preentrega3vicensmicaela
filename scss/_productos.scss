@@ -1,51 +1,46 @@
-@mixin prod{
-    font-size: 35px;
-    font-weight: bold;
-
-}
 
 .section-productos {
-	background-color: $background-color_11;
-	padding: 10px;
-	h1 {
-		@include prod;
-		padding-top: 40px;
-		color: $color_12;
-		text-align: center;
-	}
+background-color: $background-color_11;
+padding: 10px;
+h1 {
+  @include prod;
+  padding-top: 40px;
+  color: $color_12;
+  text-align: center;
+}
 }
 .grid-container {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	>div {
-		background-color: $background-color_12;
-		height: 450px;
-		border-radius: 10px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	img {
-		width: 260px;
-		height: 260px;
-		border-radius: 10px;
-		object-fit: cover;
-		&:hover {
-			transform: scale(1.1);
-			transition: 0.6s;
-		}
-	}
-	a {
-		font-weight: bold;
-		font-size: 16px;
-		color: $color_13;
-		background-color: $background-color_13;
-		text-decoration: none;
-		padding: 8px;
-		border-radius: 40px;
-		border: #4a8561 solid 2px;
-	}
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+>div {
+  background-color: $background-color_12;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+img {
+  width: 260px;
+  height: 260px;
+  border-radius: 10px;
+  object-fit: cover;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+}
+a {
+  font-weight: bold;
+  font-size: 16px;
+  color: $color_13;
+  background-color: $background-color_13;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 40px;
+  border: #4a8561 solid 2px;
+}
 }
